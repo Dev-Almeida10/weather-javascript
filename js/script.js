@@ -72,7 +72,7 @@ const weatherData = async (city) => {
 searchButton.addEventListener('click', (e) => {
     e.preventDefault();
 
-    const city = cityInput.value;
+    const city = cityInput.value.trim();
 
     // error handling
     weatherData(city).then((result) => {
