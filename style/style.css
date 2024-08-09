@@ -1,0 +1,159 @@
+:root {
+    --corPrimaria: #131313;
+    --corSegundaria: #d8e1e8;
+    --gap60: 60px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    background-color: var(--corPrimaria);
+    color: var(--corSegundaria);
+}
+
+main {
+    position: relative;
+    width: 340px;
+    height: 100px;
+    background-color: #ffffff10;
+    border: 2px solid var(--corSegundaria);
+    border-radius: 15px;
+    gap: var(--gap60);
+    transition: height .7s ease;
+}
+
+.pesquisa {
+    position: relative;
+    margin-top: 25px;
+    width: 85%;
+}
+
+.pesquisa input {
+    color: var(--corSegundaria);
+    background: transparent;
+    border: 2px solid var(--corSegundaria);
+    border-radius: 15px;
+    padding: 0.7rem;
+    width: 100%;
+}
+
+.pesquisa input::placeholder {
+    color: var(--corSegundaria);
+}
+
+.pesquisa button {
+    position: absolute;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--corSegundaria);
+    left: 85%;
+    top: 27%;
+}
+
+button:hover {
+    text-shadow: 0px 0px 12px var(--corSegundaria);
+}
+
+.info_clima {
+    gap: 40px;
+    justify-content: center;
+}
+
+.info_clima .temperatura {
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.info_clima .img_descricao {
+    position: relative;
+    gap: 15px;
+}
+
+.info_clima .img_descricao>img {
+    width: 100px;
+    height: auto;
+}
+
+#descricao {
+    position: absolute;
+    top: 115%;
+    white-space: nowrap;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+hr {
+    width: 85%;
+    margin-top: 10px;
+    margin-bottom: -25px;
+}
+
+#row_location {
+    margin-top: -25px;
+}
+
+.local {
+    position: relative;
+    width: 100%;
+    top: -7px;
+    gap: 11.5rem;
+    justify-content: center;
+    margin-bottom: -25px;
+}
+
+.local h2 {
+    position: absolute;
+}
+
+.local i {
+    font-size: 32px;
+}
+
+.detalhes_clima {
+    gap: var(--gap60);
+}
+
+
+.detalhes_clima .vento,
+.umidade {
+    font-size: 25px;
+    gap: 13px;
+}
+
+.detalhes_clima div p>span {
+    font-size: 21px;
+}
+
+.not_found {
+    position: absolute;
+    top: 30%;
+    gap: 40px;
+}
+
+.not_found img {
+    width: 65%;
+}
+
+main .info,
+.not_found {
+    visibility: hidden;
+    transition: visibility 0.7s ease;
+
+}
+
+main .info.active,
+.not_found.active {
+    visibility: visible;
+    transition-delay: 0.7s;
+}
