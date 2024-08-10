@@ -1,5 +1,5 @@
 // Selecting Elements
-const apiKey = "885c0cf1895ad0adb880824d152d27b6";
+const apiKey = secrets.apiKey;
 const cityInput = document.getElementById('city');
 const searchButton = document.getElementById('btn');
 
