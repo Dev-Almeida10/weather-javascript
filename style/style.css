@@ -14,7 +14,7 @@
 }
 
 body {
-    height: 100vh;
+    margin-top: 50px;
     justify-content: center;
     background-color: var(--corPrimaria);
     color: var(--corSegundaria);
