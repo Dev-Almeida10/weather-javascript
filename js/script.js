@@ -40,7 +40,7 @@ const weatherData = async (city) => {
         const imgIcon = document.getElementById('img_icon');
         const flagIcon = document.getElementById('flag_icon')
 
-        flagIcon.src = `https://flagsapi.com/${dataApi.sys.country}/flat/32.png`;
+        flagIcon.src = `https://flagsapi.com/${dataApi.sys.country}/shiny/32.png`;
 
         const iconMap = {
             "01n": "img/clear_sky_night.png",
