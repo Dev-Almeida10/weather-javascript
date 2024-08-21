@@ -1,5 +1,5 @@
 :root {
-    --corPrimaria: #131313;
+    --corPrimaria: #1c8080;
     --corSegundaria: #d8e1e8;
     --gap60: 60px;
 }
@@ -16,7 +16,7 @@
 body {
     margin-top: 50px;
     justify-content: center;
-    background-color: var(--corPrimaria);
+    background-color: var(--corSegundaria);
     color: var(--corSegundaria);
 }
 
@@ -24,9 +24,10 @@ main {
     position: relative;
     width: 340px;
     height: 100px;
-    background-color: #ffffff10;
-    border: 2px solid var(--corSegundaria);
+    background-color: var(--corPrimaria);
+    border: 2px solid var(--corPrimaria);
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     gap: var(--gap60);
     transition: height .7s ease;
 }
@@ -40,7 +41,7 @@ main {
 .pesquisa input {
     color: var(--corSegundaria);
     background: transparent;
-    border: 2px solid var(--corSegundaria);
+    border: 3px solid var(--corSegundaria);
     border-radius: 15px;
     padding: 0.7rem;
     width: 100%;
@@ -52,7 +53,7 @@ main {
 
 .pesquisa button {
     position: absolute;
-    font-size: 16px;
+    font-size: 17px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -97,6 +98,8 @@ hr {
     width: 85%;
     margin-top: 10px;
     margin-bottom: -25px;
+    border: 3px solid;
+    border-radius: 20px;
 }
 
 #row_location {
